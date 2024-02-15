@@ -32,10 +32,10 @@ else()
   set(PROJECT_CONFIG "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake")
   set(CONFIG_INSTALL_DIR "lib/cmake/${PROJECT_NAME}")
 
-  configure_file("${CMAKE_CURRENT_SOURCE_DIR}/../cmake/ConfigVersion.cmake.in"
+  configure_file("${CMAKE_CURRENT_SOURCE_DIR}/cmake/ConfigVersion.cmake.in"
                  "${VERSION_CONFIG}" @ONLY)
   configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/../cmake/Config.cmake.in" "${PROJECT_CONFIG}"
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/Config.cmake.in" "${PROJECT_CONFIG}"
     INSTALL_DESTINATION "${CONFIG_INSTALL_DIR}")
 
   install(FILES "${VERSION_CONFIG}" "${PROJECT_CONFIG}"
