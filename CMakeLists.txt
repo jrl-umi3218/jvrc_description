@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 cmake_policy(SET CMP0048 NEW)
-project(jvrc_description VERSION 1.0.7)
+project(jvrc_description VERSION 1.0.8)
 
 if(NOT DISABLE_ROS)
   if(NOT DEFINED ENV{ROS_VERSION})
